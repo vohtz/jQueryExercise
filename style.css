@@ -1,0 +1,42 @@
+#rotate, #fade, #event, #chaining, #callback {
+	overflow: hidden;
+	width: 100%;
+}
+#list{
+	border: 1px solid;
+	float: left;
+	padding: 20px;
+}
+.red{
+	background-color: red;
+}
+.blue{
+	background-color: blue;
+}
+.green{
+	background-color: green;
+}
+.yellow{
+	background-color: yellow;
+}
+.square{
+	float: left;
+	height: 150px;
+	margin: 50px;
+	width: 150px;
+}
+.rotate{
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.img-container img{
+	float:left;
+	width:100px;
+	height: 50px;
+	margin-bottom: 100px;
+}
